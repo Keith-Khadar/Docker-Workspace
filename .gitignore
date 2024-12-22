@@ -1,0 +1,12 @@
+# Ignore the MIL Notes directory
+MIL\ Notes/
+
+# Ignore all files inside the workspace directory, but keep the directory itself
+workspace/*
+!workspace/
+!workspace/.gitkeep
+
+# Ignore all files inside the ssh_keys directory, but keep the directory itself
+ssh_keys/*
+!ssh_keys/
+!ssh_keys/.gitkeep
