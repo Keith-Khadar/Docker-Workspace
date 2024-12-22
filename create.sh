@@ -26,4 +26,5 @@ echo "Stopping the detached container"
 docker stop mil-container
 
 echo "Restarting without -d"
+xhost +local:docker
 docker start -i mil-container
