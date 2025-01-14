@@ -23,6 +23,18 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+## Add docker to the sudo group so you can run docker without sudo
+```bash
+sudo groupadd docker
+```
+```bash
+sudo usermod -aG docker $USER
+```
+
+## To reload the permissions without restarting
+```bash
+newgrp docker
+```
 
 ## To Create the image
 ```bash
